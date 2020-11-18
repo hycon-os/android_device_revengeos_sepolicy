@@ -10,16 +10,16 @@ endif
 endif
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/revengeos/sepolicy/qcom/private
+    device/hycon/sepolicy/qcom/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/revengeos/sepolicy/qcom/dynamic \
-    device/revengeos/sepolicy/qcom/system
+    device/hycon/sepolicy/qcom/dynamic \
+    device/hycon/sepolicy/qcom/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/revengeos/sepolicy/qcom/dynamic \
-    device/revengeos/sepolicy/qcom/vendor
+    device/hycon/sepolicy/qcom/dynamic \
+    device/hycon/sepolicy/qcom/vendor
 endif
 
 ifeq (,$(filter msm8226 msm8610 msm8974 msm8909 msm8916 msm8952 msm8992 msm8994 msm8937 msm8953 msm8996 msm8998 sdm660 sdm710 sdm845, $(TARGET_BOARD_PLATFORM)))

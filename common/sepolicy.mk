@@ -10,17 +10,17 @@ endif
 endif
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/revengeos/sepolicy/common/public
+    device/hycon/sepolicy/common/public
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/revengeos/sepolicy/common/private
+    device/hycon/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/revengeos/sepolicy/common/dynamic
+    device/hycon/sepolicy/common/dynamic
 else
 
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/revengeos/sepolicy/common/dynamic \
-    device/revengeos/sepolicy/common/vendor
+    device/hycon/sepolicy/common/dynamic \
+    device/hycon/sepolicy/common/vendor
 endif
